@@ -12,7 +12,7 @@
       <AntiAliasFonts>False</AntiAliasFonts>
       <AntiGlideMode>True</AntiGlideMode>
       <AttachDataToExe>False</AttachDataToExe>
-      <AudioIndexer>0</AudioIndexer>
+      <AudioIndexer>1</AudioIndexer>
       <AutoMoveInWalkMode>True</AutoMoveInWalkMode>
       <BackwardsText>False</BackwardsText>
       <BuildTargets>Windows</BuildTargets>
@@ -2192,6 +2192,60 @@
             <Properties />
             <Interactions>
               <Event Index="0">iBucket_Look</Event>
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3">iBucket_UseInv</Event>
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>3</CursorImage>
+            <Description>Handle</Description>
+            <HotspotX>0</HotspotX>
+            <HotspotY>0</HotspotY>
+            <ID>4</ID>
+            <Image>3</Image>
+            <Name>iHandle</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>4</CursorImage>
+            <Description xml:space="preserve">Water Bucket</Description>
+            <HotspotX>0</HotspotX>
+            <HotspotY>0</HotspotY>
+            <ID>5</ID>
+            <Image>4</Image>
+            <Name>iWaterBucket</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <CursorImage>5</CursorImage>
+            <Description xml:space="preserve">Filled Bucket</Description>
+            <HotspotX>0</HotspotX>
+            <HotspotY>0</HotspotY>
+            <ID>6</ID>
+            <Image>5</Image>
+            <Name>iFullWaterBucket</Name>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
               <Event Index="1" />
               <Event Index="2" />
               <Event Index="3" />
@@ -4612,6 +4666,21 @@ stop
                   <ImportAlphaChannel>True</ImportAlphaChannel>
                 </Source>
               </Sprite>
+              <Sprite Slot="5" Width="32" Height="32" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                <Source>
+                  <FileName>Full_Water_Bucket.png</FileName>
+                  <OffsetX>0</OffsetX>
+                  <OffsetY>0</OffsetY>
+                  <ImportHeight>32</ImportHeight>
+                  <ImportWidth>32</ImportWidth>
+                  <ImportAsTile>False</ImportAsTile>
+                  <Frame>0</Frame>
+                  <RemapToGamePalette>False</RemapToGamePalette>
+                  <RemapToRoomPalette>False</RemapToRoomPalette>
+                  <ImportMethod>LeaveAsIs</ImportMethod>
+                  <ImportAlphaChannel>True</ImportAlphaChannel>
+                </Source>
+              </Sprite>
             </Sprites>
           </SpriteFolder>
         </SubFolders>
@@ -5005,7 +5074,21 @@ See KeyboardMovement.txt for details.
             </AudioClipFolder>
           </AudioClipFolder>
         </SubFolders>
-        <AudioClips />
+        <AudioClips>
+          <AudioClip>
+            <BundlingType>InGameEXE</BundlingType>
+            <DefaultPriority>Inherit</DefaultPriority>
+            <DefaultRepeat>Inherit</DefaultRepeat>
+            <DefaultVolume>-1</DefaultVolume>
+            <FileType>WAV</FileType>
+            <ID>0</ID>
+            <Index>1</Index>
+            <ScriptName>aClink</ScriptName>
+            <SourceFileName>C:\Users\jfiorill\Documents\Fiorillo_Tutorial_1\Clink.wav</SourceFileName>
+            <Type>1</Type>
+            <FileLastModifiedDate>2024-08-28 15:38:44Z</FileLastModifiedDate>
+          </AudioClip>
+        </AudioClips>
         <AudioClipFolder>
           <DefaultBundlingType>InGameEXE</DefaultBundlingType>
           <DefaultPriority>Normal</DefaultPriority>
